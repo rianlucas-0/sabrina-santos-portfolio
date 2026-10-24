@@ -29,7 +29,7 @@ module.exports = async (req, res) => {
       headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({
         from: process.env.CONTACT_FROM || 'Site Sabrina Santos <onboarding@resend.dev>',
-        to: [process.env.CONTACT_TO || 'rianlucas.moon@gmail.com'],
+        to: [process.env.CONTACT_TO || 'sabrina.csds@gmail.com'],
         reply_to: email,
         subject: `Novo contato: ${assunto || 'Site'} - ${nome}`,
         html
