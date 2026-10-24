@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contato | Sabrina Santos Cirurgiã-Dentista</title>
+<meta name="description" content="Agende sua avaliação com Sabrina Santos pelo formulário ou WhatsApp.">
+<meta name="theme-color" content="#2b211c">
+<meta property="og:title" content="Contato | Sabrina Santos Cirurgiã-Dentista"><meta property="og:description" content="Agende sua avaliação com Sabrina Santos pelo formulário ou WhatsApp."><meta property="og:type" content="website"><meta property="og:image" content="images/sabrina-2.jpg">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="wrap">
+<a class="brand" href="index.html" aria-label="Sabrina Santos - início"><img src="images/logo.png" alt=""><span>Sabrina Santos<small>Cirurgiã-Dentista</small></span></a>
+<nav aria-label="Principal"><ul><li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="trajetoria.html">Trajetória</a></li><li><a href="contato.html" class=active aria-current=page>Contato</a></li></ul></nav>
+<button class="burger" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i><i></i></button>
+</div></header>
+<main>
+<section class="page-head"><div class="wrap"><span class="eyebrow" style="color:#d9bf9f">Contato</span><h1>Vamos conversar</h1><p>Escolha a forma mais confortável de falar comigo: pelo formulário do site ou direto pelo WhatsApp.</p></div></section>
+<section class="s"><div class="wrap"><div class="contact-grid">
+<div class="reveal"><span class="eyebrow">Informações</span>
+<ul class="info">
+<li><small>WhatsApp / Telefone</small><a href="https://api.whatsapp.com/send/?phone=5531997382592&text&type=phone_number&app_absent=0" target="_blank" rel="noopener">+55 (31) 99738-2592</a></li>
+<li><small>E-mail</small><a href="mailto:Sabrina.csds@gmail.com">Sabrina.csds@gmail.com</a></li>
+<li><small>Endereço</small><a href="https://www.google.com/maps?q=Av.+Zumbi+Dos+Palmares,+250+-+Jardim+Vera+Cruz,+Sarzedo-MG" target="_blank" rel="noopener">Av. Zumbi dos Palmares, 250<br>Jardim Vera Cruz, Sarzedo-MG</a></li>
+</ul>
+<div class="social"><a href="https://www.instagram.com/p/DM_vN98JRCU/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://www.linkedin.com/in/sabrina-santos-6527ab21a/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://api.whatsapp.com/send/?phone=5531997382592&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></div></div>
+<div class="reveal">
+<div class="choice" role="tablist"><button role="tab" aria-selected="true" data-panel="p-site"><i class="fa-regular fa-envelope"></i> Pelo site</button><button role="tab" aria-selected="false" data-panel="p-wa"><i class="fa-brands fa-whatsapp"></i> Pelo WhatsApp</button></div>
+<div class="panel" id="p-site"><h2>Envie uma mensagem</h2><p>Preencha os campos e retornarei o mais breve possível.</p>
+<form id="contactForm" data-endpoint="https://formsubmit.co/ajax/rianlucas.moon@gmail.com" data-wa="https://api.whatsapp.com/send/?phone=5531997382592&text&type=phone_number&app_absent=0">
+<div class="row"><div class="field"><label for="name">Nome</label><input id="name" name="Nome" required autocomplete="name"></div>
+<div class="field"><label for="phone">Telefone (opcional)</label><input id="phone" name="Telefone" type="tel" autocomplete="tel"></div></div>
+<div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+<div class="field"><label for="subject">Assunto</label><select id="subject" name="Assunto" required><option value="">Selecione</option><option>Agendar avaliação</option><option>DTM e dor orofacial</option><option>Odontologia do sono</option><option>Endodontia</option><option>Outro assunto</option></select></div>
+<div class="field"><label for="message">Mensagem</label><textarea id="message" name="Mensagem" required></textarea></div>
+<input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+<input type="hidden" name="_subject" value="Novo contato pelo site - Sabrina Santos">
+<input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false">
+<button class="btn" type="submit">Enviar mensagem</button>
+<div id="status" class="status" role="status" aria-live="polite"></div>
+</form></div>
+<div class="panel" id="p-wa" hidden><h2>Fale pelo WhatsApp</h2><p>Atendimento direto e mais rápido. Clique abaixo e inicie a conversa.</p><a class="btn wa" href="https://api.whatsapp.com/send/?phone=5531997382592&text&type=phone_number&app_absent=0" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Abrir conversa</a></div>
+</div></div>
+<div class="map reveal"><iframe title="Mapa do consultório" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Av.+Zumbi+Dos+Palmares,+250+-+Jardim+Vera+Cruz,+Sarzedo-MG&output=embed"></iframe></div>
+</div></section>
+</main>
+<footer><div class="wrap">
+<div class="f-grid">
+<div><a class="brand" href="index.html"><img src="images/logo.png" alt=""><span>Sabrina Santos<small>Cirurgiã-Dentista</small></span></a><p>Odontologia com escuta, diagnóstico preciso e cuidado individualizado.</p></div>
+<div><h4>Navegação</h4><ul><li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="trajetoria.html">Trajetória</a></li><li><a href="contato.html">Contato</a></li></ul></div>
+<div><h4>Contato</h4><ul><li><a href="https://api.whatsapp.com/send/?phone=5531997382592&text&type=phone_number&app_absent=0" target="_blank" rel="noopener">(31) 99738-2592</a></li><li><a href="mailto:Sabrina.csds@gmail.com">Sabrina.csds@gmail.com</a></li><li><a href="https://www.google.com/maps?q=Av.+Zumbi+Dos+Palmares,+250+-+Jardim+Vera+Cruz,+Sarzedo-MG" target="_blank" rel="noopener">Av. Zumbi dos Palmares, 250<br>Jardim Vera Cruz, Sarzedo-MG</a></li></ul></div>
+</div>
+<div class="copy"><span>&copy; <span id="year">2025</span> Sabrina Santos. Todos os direitos reservados.</span><span class="social-mini"><a href="https://www.instagram.com/p/DM_vN98JRCU/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a> &nbsp; <a href="https://www.linkedin.com/in/sabrina-santos-6527ab21a/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></span></div>
+</div></footer>
+<a class="wa-float" href="https://api.whatsapp.com/send/?phone=5531997382592&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<script src="js/main.js"></script>
+</body>
+</html>
