@@ -21,11 +21,11 @@ e.preventDefault();
 if(form._honey.value)return;
 st.className='status';st.textContent='';
 btn.disabled=true;const old=btn.textContent;btn.textContent='Enviando...';
-const d=Object.fromEntries(new FormData(form));delete d._honey;
+const d=Object.fromEntries(new FormData(form));
 try{
 const r=await fetch(form.dataset.endpoint,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(d)});
 const j=await r.json().catch(()=>({}));
-if(!r.ok||j.success==='false'||j.success===false)throw new Error(j.message||r.status);
+if(!r.ok||!j.ok)throw new Error(j.message||r.status);
 st.className='status ok';st.textContent='Mensagem enviada com sucesso! Retornarei o contato em breve.';form.reset();
 }catch(err){
 console.error(err);
